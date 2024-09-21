@@ -1,0 +1,34 @@
+*{ 
+}
+h1, h5{
+    margin-left: 0px;
+    color: black;
+}
+
+a{
+    border-radius: 10px;
+}
+
+#siswa{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+    width: 200px;
+    margin-left: 0px;
+}
+
+#siswa td, #siswa th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#siswa tr:nth-child(even){background-color: rgb(222, 194, 248);}
+
+#siswa tr:hover {background-color: #ddd;}
+
+#siswa th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(186, 136, 233);
+    color: white;
+}
