@@ -1,4 +1,4 @@
 <div class="menu">
-    <a href="<? base_url(); ?>admin">Data Siswa</a>
-    <a href="<? base_url(); ?>login/logout">logout</a>
+    <a href="<?= base_url(); ?>admin">Data Siswa</a>
+    <a href="<?= base_url(); ?>login/logout">logout</a>
 </div>
