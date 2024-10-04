@@ -13,10 +13,9 @@
     <input placeholder="masukkan nama" type="text" name="nama"><br><br>
     <select name="alamat">
         <option value="">pilih alamat</option>
-        <option value="batang">batang</option>
-        <option value="pekalongan">pekalongan</option>
-        <option value="pemalang">pemalang</option>
-        <option value="tegal">tegal</option>
+        <?php foreach ($alamat as $al) : ?>
+            <option value="<?= $al['id'] ?>"> <?= $al['alamat'] ?></option>
+        <?php endforeach; ?>
     </select>
     <br><br>
     <input placeholder="masukkan no.telp" type="text" name="no_telp"><br><br><br>

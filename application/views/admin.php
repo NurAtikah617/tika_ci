@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HALAMAN LOGIN</h1>
+    <h1>HALAMAN ADMIN</h1>
 
     <h5>TABEL DATA SISWA</h5>
     <a href="<?php echo base_url('tambah_siswa'); ?>"> TAMBAH DATA </a>

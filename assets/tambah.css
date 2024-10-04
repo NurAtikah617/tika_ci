@@ -1,10 +1,21 @@
 h1{
-    color: black;
+    color: rgb(52, 12, 67);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 0px;
 }
 
 .tambah input[type=text]{
+    width: 35%;
+    color: white;
+    padding: 6px 7px;
+    border-radius: 10px;
+    margin-left: 0px;
+    border: none;
+    background-color: rgb(195, 155, 233);
+    cursor: pointer;
+}
+
+.tambah input[type=password]{
     width: 35%;
     color: white;
     padding: 6px 7px;
