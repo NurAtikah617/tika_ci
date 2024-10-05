@@ -9,7 +9,7 @@
 <body>
     <h1>DATA SISWA SMK SYAFI'I AKROM</h1>
     <div class="tambah">
-    <form action="tambah_siswa/tambah" method="POST">
+    <form action="<?= base_url() ?>tambah_siswa/tambah" method="POST">
     <input placeholder="masukkan nama" type="text" name="nama"><br><br>
     <select name="alamat">
         <option value="">pilih alamat</option>

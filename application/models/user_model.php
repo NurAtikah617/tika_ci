@@ -13,6 +13,7 @@ public function simpanuser()
 			"password" => password_hash($this->input->post('password'),PASSWORD_DEFAULT),
 			"nama" => $this->input->post('nama', true)
 	];
+	
 	$this->db->insert('user', $data);
 	}
 }
