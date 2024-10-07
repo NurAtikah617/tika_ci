@@ -29,7 +29,7 @@ class Admin extends CI_Controller {
 	{
 		$this->load->model('siswa_model');
 		$data['edit'] = $this->siswa_model->getsiswaByNis($nis);
-		$data['alamat'] = [1, 2, 3, 4];
+		$data['alamat'] = $this->db->get('alamat')->result_array();
 
 		$this->load->view('template/header');
 		$this->load->view('edit_siswa', $data);

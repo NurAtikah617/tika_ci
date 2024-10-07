@@ -10,7 +10,7 @@
     <h1>HALAMAN ALAMAT</h1>
 
     <h5>TABEL DATA ALAMAT</h5>
-    <a href="<?php echo base_url('alamat/tambah_alamat'); ?>"> TAMBAH DATA </a>
+    <a href="<?php echo base_url('alamat/tambah_alamat'); ?>"> TAMBAH DATA ALAMAT</a>
     <table border=1 id="siswa">
         <tr>
             <th>ID</th>
