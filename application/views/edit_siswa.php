@@ -15,11 +15,7 @@
     <select name="alamat">
         <option value="">pilih alamat</option>
         <?php foreach( $alamat as $al ) : ?>
-            <?php if( $al == $edit['alamat'] ) : ?>
-                <option value="<?= $al; ?>" selected><?= $al; ?></option>
-            <?php else : ?>
-                <option value="<?= $al; ?>"><?= $al; ?></option>
-        <?php endif; ?>
+            <option value="<?= $al['id']?>"><?= $al['alamat']?></option>
         <?php endforeach; ?>
     </select>
     <br><br>

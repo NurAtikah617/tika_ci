@@ -2,6 +2,12 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
+	public function __construct()
+	{
+		parent::__construct();
+		is_logged_in();
+	}
+
 
 	public function index()
 	{
@@ -23,7 +29,7 @@ class Admin extends CI_Controller {
 	{
 		$this->load->model('siswa_model');
 		$data['edit'] = $this->siswa_model->getsiswaByNis($nis);
-		$data['alamat'] = ['pekalongan', 'batang', 'pemalang', 'tegal'];
+		$data['alamat'] = $this->db->get('alamat')->result_array();
 
 		$this->load->view('template/header');
 		$this->load->view('edit_siswa', $data);
@@ -34,7 +40,7 @@ class Admin extends CI_Controller {
 		$data =
 		[
 			"nama" => $this->input->post('nama', true),
-			"alamat" => $this->input->post('alamat', true),
+			"id_alamat" => $this->input->post('alamat', true),
 			"no_telp" => $this->input->post('no_telp', true)
 		];
 
